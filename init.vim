@@ -1,4 +1,4 @@
-autocmd BufNewFile,BufRead * startinsert "Start in insert mode
+start "Start in insert mode
 
 set mouse=a "Turn on mouse in all modes
 set number
