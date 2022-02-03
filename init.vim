@@ -3,10 +3,18 @@ start "Start in insert mode
 set mouse=a "Turn on mouse in all modes
 set number
 set tabstop=2 "Tab is 2 spaces
+syntax on
 
-colorscheme delek
+call plug#begin()
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "Files tree
+Plug 'morhetz/gruvbox' "Color scheme
+call plug#end()
 
-"Save in insert mode
+"Switch insert and normal modes
+imap <c-]> <Esc>
+nmap <c-]> i
+"Switch tree
+nmap <c-[> :NERDTreeToggle<CR>
+"Save
 imap <c-s> <Esc>:w<CR>a
-"Save and quit in instert mode
-imap <c-q> <Esc>:wq<CR>
+nmap <c-s> :w<CR>
