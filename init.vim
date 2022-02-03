@@ -3,6 +3,7 @@ start "Start in insert mode
 set mouse=a "Turn on mouse in all modes
 set number
 syntax on
+set colorcolumn=100
 "Tab is 2 spaces
 set shiftwidth=2
 set tabstop=2
