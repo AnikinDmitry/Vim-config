@@ -4,7 +4,7 @@ set mouse=a "Turn on mouse in all modes
 set number
 syntax on
 "Tab is 2 spaces
-set shiftwdth=2
+set shiftwidth=2
 set tabstop=2
 
 call plug#begin()
