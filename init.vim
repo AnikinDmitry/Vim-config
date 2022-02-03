@@ -2,8 +2,10 @@ start "Start in insert mode
 
 set mouse=a "Turn on mouse in all modes
 set number
-set tabstop=2 "Tab is 2 spaces
 syntax on
+"Tab is 2 spaces
+set shiftwdth=2
+set tabstop=2
 
 call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "Files tree
