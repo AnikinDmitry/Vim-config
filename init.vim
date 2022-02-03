@@ -12,6 +12,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "Files tree
 Plug 'morhetz/gruvbox' "Color scheme
 call plug#end()
 
+colorscheme gruvbox
+
 "Switch insert and normal modes
 imap <A-q> <Esc>
 nmap <A-q> i
