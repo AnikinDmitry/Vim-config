@@ -11,10 +11,10 @@ Plug 'morhetz/gruvbox' "Color scheme
 call plug#end()
 
 "Switch insert and normal modes
-imap <c-]> <Esc>
-nmap <c-]> i
+imap <A-q> <Esc>
+nmap <A-q> i
 "Switch tree
-nmap <c-[> :NERDTreeToggle<CR>
+nmap <tab> :NERDTreeToggle<CR>
 "Save
 imap <c-s> <Esc>:w<CR>a
 nmap <c-s> :w<CR>
