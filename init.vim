@@ -4,6 +4,9 @@ set mouse=a "Turn on mouse in all modes
 set number
 syntax on
 set colorcolumn=100
+"Tab is 3 spaces
+set tabstop=3
+set shiftwidth=3
 
 call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "Files tree
