@@ -15,7 +15,6 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} "Files tree
 Plug 'morhetz/gruvbox' "Color scheme
 Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
-Plug 'neoclide/coc.nvim', {'branch': 'release'} "Support some languages
 call plug#end()
 
 colorscheme gruvbox
