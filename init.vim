@@ -11,6 +11,8 @@ set shiftwidth=3
 call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "Files tree
 Plug 'morhetz/gruvbox' "Color scheme
+Plug 'jiangmiao/auto-pairs' "Auto close pairs
+Plug 'airblade/vim-gitgutter' "Show git diff in column
 call plug#end()
 
 colorscheme gruvbox
@@ -21,17 +23,16 @@ nmap <A-q> i
 "Switch tree
 nmap <tab> :NERDTreeToggle<CR>
 "Save
-imap <c-s> <Esc>:w<CR>a
-nmap <c-s> :w<CR>
+imap <A-s> <Esc>:w<CR>a
+nmap <A-s> :w<CR>
 "Quit
+imap <A-`> <Esc>:q<CR>a
 nmap <A-`> :q<CR>
 "Cancel
 imap <A-z> <Esc>ua
 nmap <A-z> u
 "Copy
-vmap <c-c> ya
+vmap <A-c> ya
 "Paste
-imap <c-v> <Esc>pa
-nmap <c-c> p
-
-autocmd VimEnter * NERDTree "Open files tree to start
+imap <A-v> <Esc>pa
+nmap <A-c> p
