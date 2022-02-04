@@ -32,6 +32,6 @@ nmap <A-z> u
 vmap <c-c> ya
 "Paste
 imap <c-v> <Esc>pa
-namp <c-c> p
+nmap <c-c> p
 
 autocmd VimEnter * NERDTree "Open files tree to start
