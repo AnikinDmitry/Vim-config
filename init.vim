@@ -11,7 +11,7 @@ set tabstop=3
 set shiftwidth=3
 
 call plug#begin()
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "Files tree
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} "Files tree
 Plug 'morhetz/gruvbox' "Color scheme
 Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
@@ -22,7 +22,7 @@ colorscheme gruvbox
 
 "Switch insert and normal modes
 imap <A-`> <Esc>
-nmap <A-`> i
+nmap <A-`> a
 "Switch tree
 nmap <tab> :NERDTreeToggle<CR>
 "Save
