@@ -23,3 +23,15 @@ nmap <tab> :NERDTreeToggle<CR>
 "Save
 imap <c-s> <Esc>:w<CR>a
 nmap <c-s> :w<CR>
+"Quit
+nmap <A-`> :q<CR>
+"Cancel
+imap <A-z> <Esc>ua
+nmap <A-z> u
+"Copy
+vmap <c-c> ya
+"Paste
+imap <c-v> <Esc>pa
+namp <c-c> p
+
+autocmd VimEnter * NERDTree "Open files tree to start
