@@ -5,7 +5,7 @@ set number
 syntax on
 set encoding=utf-8 fileencoding=utf-8
 set colorcolumn=100
-set tabstop=3 shiftwidth=3 "Tab is 3 spaces
+set tabstop=4 shiftwidth=4 "Tab is 4 spaces
 set noswapfile "Delete some errors
 
 call plug#begin()
