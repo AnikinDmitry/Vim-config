@@ -3,18 +3,17 @@ start "Start in insert mode
 set mouse=a "Turn on mouse in all modes
 set number
 syntax on
-set encoding=utf-8
-set fileEncoding=utf-8
+set encoding=utf-8 fileEncoding=utf-8
 set colorcolumn=100
-"Tab is 3 spaces
-set tabstop=3
-set shiftwidth=3
+set tabstop=3 shiftwidth=3 "Tab is 3 spaces
+set noswapfile "Delete some errors
 
 call plug#begin()
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} "Files tree
 Plug 'morhetz/gruvbox' "Color scheme
 Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
+Plug 'tpope/vim-figitive' "Show git diif in new page and other
 call plug#end()
 
 colorscheme gruvbox
@@ -31,10 +30,12 @@ nmap <A-s> :w<CR>
 imap <A-q> <Esc>:q<CR>a
 nmap <A-q> :q<CR>
 "Cancel
-imap <A-z> <Esc>ua
-nmap <A-z> u
+imap <c-z> <Esc>ua
+nmap <c-z> u
 "Copy
-vmap <A-c> ya
+vmap <c-c> ya
 "Paste
-imap <A-v> <Esc>pa
-nmap <A-c> p
+imap <c-v> <Esc>pa
+nmap <c-v> p
+"Show git diff
+nmap <A-d> :Gdiff<CR>
