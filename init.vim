@@ -3,7 +3,7 @@ start "Start in insert mode
 set mouse=a "Turn on mouse in all modes
 set number
 syntax on
-set encoding=utf-8 fileEncoding=utf-8
+set encoding=utf-8 fileencoding=utf-8
 set colorcolumn=100
 set tabstop=3 shiftwidth=3 "Tab is 3 spaces
 set noswapfile "Delete some errors
