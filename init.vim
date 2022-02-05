@@ -14,6 +14,7 @@ Plug 'morhetz/gruvbox' "Color scheme
 Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
 Plug 'tpope/vim-figitive' "Show git diif in new page and other
+Plug 'Lokaltog/vim-powerline' "Status bar
 call plug#end()
 
 colorscheme gruvbox
