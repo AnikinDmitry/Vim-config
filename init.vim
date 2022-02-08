@@ -4,6 +4,8 @@ set mouse=a "Turn on mouse in all modes
 set number
 syntax on
 set encoding=utf-8 fileencoding=utf-8
+scriptencoding=utf-8
+set list "Add symbol for tab and space
 set colorcolumn=100
 set tabstop=4 shiftwidth=4 "Tab is 4 spaces
 set noswapfile "Delete some errors
@@ -19,17 +21,18 @@ call plug#end()
 
 colorscheme gruvbox
 
+"A is alt, c is ctrl
 "Switch insert and normal modes
-imap <A-`> <Esc>
-nmap <A-`> a
+imap <a-`> <Esc>
+nmap <a-`> a
 "Switch tree
 nmap <tab> :NERDTreeToggle<CR>
 "Save
-imap <A-s> <Esc>:w<CR>a
-nmap <A-s> :w<CR>
+imap <a-s> <Esc>:w<CR>a
+nmap <a-s> :w<CR>
 "Quit
-imap <A-q> <Esc>:q<CR>a
-nmap <A-q> :q<CR>
+imap <a-q> <Esc>:q<CR>a
+nmap <a-q> :q<CR>
 "Cancel
 imap <c-z> <Esc>ua
 nmap <c-z> u
