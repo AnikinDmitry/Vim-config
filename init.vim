@@ -22,15 +22,15 @@ call plug#end()
 
 colorscheme gruvbox
 
-"A is alt, c is ctrl
+"A is alt, c is ctrl, bs is backspace
 "Switch insert and normal modes
 imap <a-1> <Esc>
 nmap <a-1> a
-"Switch tree
+"Switch files tree        
 nmap <tab> :NERDTreeToggle<CR>
 "Save
-imap <a-s> <Esc>:w<CR>a
-nmap <a-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
+nmap <c-s> :w<CR>
 "Quit
 imap <a-q> <Esc>:q<CR>a
 nmap <a-q> :q<CR>
@@ -42,5 +42,7 @@ vmap <c-c> ya
 "Paste
 imap <c-v> <Esc>pa
 nmap <c-v> p
+"Delete
+vmap <bs> d
 "Show git diff
-nmap <A-d> :Gdiff<CR>
+nmap <c-d> :Gdiff<CR>
