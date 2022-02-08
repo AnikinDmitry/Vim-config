@@ -11,12 +11,13 @@ set tabstop=4 shiftwidth=4 "Tab is 4 spaces
 set noswapfile "Delete some errors
 
 call plug#begin()
-Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} "Files tree
+Plug 'preservim/nerdtree' "Files tree
 Plug 'morhetz/gruvbox' "Color scheme
 Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
 Plug 'tpope/vim-figitive' "Show git diif in new page and other
-Plug 'Lokaltog/vim-powerline' "Status bar
+Plug 'vim-airline/vim-airline' "Status bar
+Plug 'Xuyuanp/nerdtree-git-airline' "Show git diff in files tree 
 call plug#end()
 
 colorscheme gruvbox
