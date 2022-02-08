@@ -17,15 +17,15 @@ Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
 Plug 'tpope/vim-fugitive' "Show git diif in new page and other
 Plug 'vim-airline/vim-airline' "Status bar
-Plug 'xuyuanp/nerdtree-git-airline' "Show git diff in files tree 
+Plug 'xuyuanp/nerdtree-git-plugin' "Show git diff in files tree 
 call plug#end()
 
 colorscheme gruvbox
 
 "A is alt, c is ctrl
 "Switch insert and normal modes
-imap <a-`> <Esc>
-nmap <a-`> a
+imap <a-1> <Esc>
+nmap <a-1> a
 "Switch tree
 nmap <tab> :NERDTreeToggle<CR>
 "Save
