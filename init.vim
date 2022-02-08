@@ -15,9 +15,9 @@ Plug 'preservim/nerdtree' "Files tree
 Plug 'morhetz/gruvbox' "Color scheme
 Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
-Plug 'tpope/vim-figitive' "Show git diif in new page and other
+Plug 'tpope/vim-fugitive' "Show git diif in new page and other
 Plug 'vim-airline/vim-airline' "Status bar
-Plug 'Xuyuanp/nerdtree-git-airline' "Show git diff in files tree 
+Plug 'xuyuanp/nerdtree-git-airline' "Show git diff in files tree 
 call plug#end()
 
 colorscheme gruvbox
