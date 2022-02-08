@@ -10,6 +10,7 @@ set colorcolumn=100
 set tabstop=4 shiftwidth=4 "Tab is 4 spaces
 set noswapfile "Delete some errors
 
+"Vim-plug
 call plug#begin()
 Plug 'preservim/nerdtree' "Files tree
 Plug 'morhetz/gruvbox' "Color scheme
@@ -17,7 +18,8 @@ Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
 Plug 'tpope/vim-fugitive' "Show git diif in new page and other
 Plug 'vim-airline/vim-airline' "Status bar
-Plug 'xuyuanp/nerdtree-git-plugin' "Show git diff in files tree 
+Plug 'xuyuanp/nerdtree-git-plugin' "Show git diff in files tree
+Plug 'neoclide/coc.nvim', {'branch': 'release'} "Some languages support
 call plug#end()
 
 colorscheme gruvbox
@@ -46,3 +48,12 @@ nmap <c-v> p
 vmap <bs> d
 "Show git diff
 nmap <c-d> :Gdiff<CR>
+
+"For coc plugin
+let g:coc_global_extentions=[
+            \'coc-java'
+            \]
+set hidden
+set updatetime=300
+set nobackup
+set nowritebackup
