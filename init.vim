@@ -24,34 +24,37 @@ call plug#end()
 
 colorscheme gruvbox
 
-"A is alt, c is ctrl, bs is backspace
+"A is alt, c is ctrl, bs is backspace, cr is enter
 "Switch insert and normal modes
-imap <a-1> <Esc>
+imap <a-1> <esc>
 nmap <a-1> a
 "Switch files tree        
-nmap <tab> :NERDTreeToggle<CR>
+nmap <tab> :NERDTreeToggle<cr>
 "Save
-imap <c-s> <Esc>:w<CR>a
-nmap <c-s> :w<CR>
+imap <c-s> <esc>:w<cr>a
+nmap <c-s> :w<cr>
 "Quit
-imap <a-q> <Esc>:q<CR>a
-nmap <a-q> :q<CR>
+imap <a-q> <esc>:q<cr>a
+nmap <a-q> :q<cr>
 "Cancel
-imap <c-z> <Esc>ua
+imap <c-z> <esc>ua
 nmap <c-z> u
 "Copy
 vmap <c-c> ya
 "Paste
-imap <c-v> <Esc>pa
+imap <c-v> <esc>pa
 nmap <c-v> p
 "Delete
 vmap <bs> d
 "Show git diff
-nmap <c-d> :Gdiff<CR>
+nmap <c-d> :Gdiff<cr>
 
 "For coc plugin
 let g:coc_global_extentions=[
-            \'coc-java'
+            \'coc-java',
+            \'coc-json',
+            \'coc-pyright',
+            \'coc-tsserver'
             \]
 set hidden
 set updatetime=300
