@@ -50,7 +50,7 @@ vmap <bs> d
 nmap <c-d> :Gdiff<cr>
 
 "For coc plugin
-let g:coc_global_extentions=[
+let g:coc_global_extensions=[
             \'coc-java',
             \'coc-json',
             \'coc-pyright',
