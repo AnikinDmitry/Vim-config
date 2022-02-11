@@ -17,7 +17,7 @@ Plug 'morhetz/gruvbox' "Color scheme
 Plug 'jiangmiao/auto-pairs' "Auto close pairs
 Plug 'airblade/vim-gitgutter' "Show git diff in column
 Plug 'tpope/vim-fugitive' "Show git diif in new page and other
-Plug 'vim-airline/vim-airline' "Status bar
+Plug 'Lokaltog/vim-powerline' "Status bar
 Plug 'xuyuanp/nerdtree-git-plugin' "Show git diff in files tree
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "Some languages support
 call plug#end()
@@ -54,7 +54,8 @@ let g:coc_global_extensions=[
             \'coc-java',
             \'coc-json',
             \'coc-pyright',
-            \'coc-tsserver'
+            \'coc-tsserver',
+            \'coc-snippets
             \]
 set hidden
 set updatetime=300
