@@ -37,8 +37,8 @@ nmap <c-s> :w<cr>
 imap <a-q> <esc>:q<cr>a
 nmap <a-q> :q<cr>
 "Cancel
-imap <c-z> <esc>ua
-nmap <c-z> u
+imap <a-z> <esc>ua
+nmap <a-z> u
 "Copy
 vmap <c-c> ya
 "Paste
